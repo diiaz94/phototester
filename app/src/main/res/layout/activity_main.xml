@@ -8,13 +8,47 @@
     android:paddingTop="16dp">
 
 
+    <!-- Name Label -->
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/lblName"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="10dip"/>
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginBottom="40dip"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="@string/welcome"
+    android:textSize="20dp"/>
+
+    <Button android:id="@+id/btnInit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/init"
+    android:layout_marginBottom="40dip"/>
+
+
+    <!-- Button to show session data -->
+    <Button android:id="@+id/btnLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/welcome"
-        android:textSize="20dp"/>
+        android:text="@string/logout"/>
 
     <Button
         android:onClick="logout"
@@ -23,5 +57,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/logout"
+        android:visibility="invisible"
         />
+
 </RelativeLayout>
